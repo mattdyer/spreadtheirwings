@@ -272,3 +272,7 @@ img {
 	margin: 0 auto;
 	text-align: center;
 }
+
+#logo img{
+	border: 1px solid #2b1503;
+}
