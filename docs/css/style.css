@@ -80,16 +80,16 @@ img {
 #contents a:hover {
 	color: #ce8763;
 }
-/** Adbox **/
-#contents div#adbox {
+/** mainimage **/
+#contents div#mainimage {
 	margin-bottom: 36px;
 	padding: 0;
 	text-align: center;
 }
-#adbox img {
+#mainimage img {
 	margin-bottom: 24px;
 }
-#adbox p {
+#mainimage p {
 	width: 600px;
 	text-align: center;
 	text-indent: 40px;
@@ -118,6 +118,14 @@ img {
 	padding: 0;
 	text-align: center;
 }
+
+#featured img {
+	width: 250px;
+	border: 2px solid #2b1503;
+	border-radius: 7px;
+}
+
+
 /** About **/
 #contents div#about {
 	width: 730px;
@@ -274,5 +282,7 @@ img {
 }
 
 #logo img{
-	border: 1px solid #2b1503;
+	border: 2px solid #2b1503;
+    border-radius: 0px 0px 10px 10px;
+    border-top: none;
 }
