@@ -1,6 +1,7 @@
 body {
 	font-family: Arial, Helvetica, sans-serif;
 	margin: 0;
+	background-color: #fff7db;
 }
 
 img{
@@ -9,9 +10,8 @@ img{
 
 #header {
 	background: url(../images/bg-header.jpg) repeat-x left top;
-	height: 160px;
-	margin-bottom: 20px;
-    padding: 10px;
+	height: auto;
+    padding: 0 10px 10px 10px;
 }
 
 #logo, #mainimage{
@@ -20,12 +20,125 @@ img{
 
 #logo img{
 	max-width: 280px;
+	border: 2px solid #2b1503;
+    border-radius: 0px 0px 10px 10px;
+    border-top: none;
 }
 
 #mainimage img{
-	max-width: 500px;
+	max-width: 700px;
 }
 
 .featured-image{
 	max-width: 500px;
+	border: 2px solid #2b1503;
+	border-radius: 7px;
+}
+
+#featured p{
+	text-align: center;
+}
+
+#featured ul{
+	display: flex;
+	flex-wrap: wrap;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#featured li{
+	flex: 30%;
+}
+
+#navigation{
+	display: flex;
+	list-style: none;
+	flex-wrap: wrap;
+	margin-top: 30px;
+}
+
+#navigation li{
+	white-space: nowrap;
+	flex: 24%;
+	text-align: center;
+	border-top: 4px solid #c1950e;
+    border-bottom: 4px solid #c1950e;
+}
+
+#navigation li a{
+	text-decoration: none;
+	color: #aa9387;
+	width: 100%;
+	display: block;
+	padding: 5px;
+}
+
+#navigation li.selected{
+	background-color: #efe7cb;
+	border-top: 4px solid #614500;
+	border-bottom: 4px solid #614500;
+}
+
+#navigation li:hover a{
+	text-decoration: none;
+	color: #956836;
+}
+
+#navigation li:hover{
+	background-color: #efe7cb;
+}
+
+#contents{
+	margin: 0 5%;
+	color: #956836
+}
+
+#contents p a {
+    color: #aa9387;
+}
+
+#footer{
+	margin: 0;
+	background: url(../images/bg-footer.png) repeat-x center bottom;
+    padding: 18px 10px 30px;
+    color: #956836;
+}
+
+#footer a {
+    color: #aa9387;
+}
+
+#about img{
+	max-width: 300px;
+}
+
+@media (max-width: 800px) {
+  #navigation{
+  	width: 200px;
+  }
+  
+  #featured li {
+    flex: 100%;
+  }
+  
+  #navigation li,#navigation li.selected{
+    flex: 100%;
+    text-align: left;
+    border-top: none;
+  }
+}
+
+@media (max-width: 350px) {
+  #navigation{
+  	width: 80%;
+  	margin-top: 50px;
+  }
+}
+
+@media (max-width: 250px) {
+  #navigation{
+  	width: 80%;
+  	margin-top: 100px;
+  }
 }
