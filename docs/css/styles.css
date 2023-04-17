@@ -91,7 +91,14 @@ img{
 
 #contents{
 	margin: 0 5%;
-	color: #956836
+	color: #956836;
+	line-height: 25px;
+}
+
+#contents h3 {
+	font-weight: normal;
+	letter-spacing: 1px;
+	margin: 0
 }
 
 #contents p a {
@@ -111,6 +118,13 @@ img{
 
 #about img{
 	max-width: 300px;
+	float: left;
+	padding-right: 30px;
+	padding-bottom: 60px;
+}
+
+#about div{
+	margin-bottom: 60px;
 }
 
 @media (max-width: 800px) {
